@@ -24,3 +24,5 @@ app.use('/api-docs',swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 app.listen(PORT, () => {
 	console.log('Server running at port 8085')
 })
+
+module.exports = app
