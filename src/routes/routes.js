@@ -52,8 +52,6 @@ router.get('/linhaproduto', linhaProdutoController.getAll)
  *                      schema:
  *                          type: object
  *                          properties:
- *                              id_produto:
- *                                  type: integer
  *                              nm_produto:
  *                                  type: string
  *          responses:
@@ -83,7 +81,7 @@ router.post('/linhaproduto', linhaProdutoController.createLinhaProduto)
 
 /**
  * @swagger
- * /linhaproduto:
+ * /linhaproduto/id:
  *      delete:
  *          tags: ['Linhas de Produtos']
  *          summary: Remove um produto
@@ -118,7 +116,7 @@ router.delete('/linhaproduto/:id', linhaProdutoController.deleteLinhaProduto)
 
 /**
  * @swagger
- * /linhaproduto:
+ * /linhaproduto/id:
  *      put:
  *          tags: ['Linhas de Produtos']
  *          summary: Atualiza os dados do produto
