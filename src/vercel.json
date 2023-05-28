@@ -6,8 +6,8 @@
             "use": "@now/node"
         }
     ],
-    "routes": {
+    "routes": [{
         "src": "src/routes/routes.js",
         "dest": "server.js"
-    }
+    }]
 }
