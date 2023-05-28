@@ -5,6 +5,7 @@ const InstalacaoController = require('../controllers/InstalacaoController')
 const EstoqueController = require('../controllers/EstoqueController')
 const Monitoramento = require('../controllers/MonitoramentoController')
 
+
 /* Rotas para o Endpoint Linha de Produto *************************************/
 
 /**
