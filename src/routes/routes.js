@@ -219,7 +219,7 @@ router.get('/instalacao', InstalacaoController.getAll)
  *                              ins_energia_consumida:
  *                                  type: string 
  *          responses:
- *              '200':
+ *              '201':
  *                  description: Cria e retorna o JSON da instalação criada!
  *                  content:
  *                      application/json:
@@ -254,7 +254,7 @@ router.post('/instalacao', InstalacaoController.createInstalacao)
  *          description: Remove uma instalação
  *          parameters:
  *              - in: path
- *                name: {id_instalacao}
+ *                name: id_instalacao
  *                required: true                 
  *          responses:
  *              '200':
@@ -304,7 +304,7 @@ router.delete('/instalacao/:id', InstalacaoController.deleteInstalacao)
  *                              ins_energia_consumida:
  *                                  type: string 
  *          responses:
- *              '200':
+ *              '201':
  *                  description: Instalação atualizada com sucesso!
  *                  content:
  *                      application/json:
@@ -390,7 +390,7 @@ router.get('/estoque', EstoqueController.getAll)
  *                              qtd_descarte:
  *                                  type: number
  *          responses:
- *              '200':
+ *              '201':
  *                  description: Estoque criado com sucesso!
  *                  content:
  *                      application/json:
@@ -476,7 +476,7 @@ router.delete('/estoque/:id', EstoqueController.deleteEstoque)
  *                              qtd_descarte:
  *                                  type: number
  *          responses:
- *              '200':
+ *              '201':
  *                  description: Estoque atualizado com sucesso!
  *                  content:
  *                      application/json:
