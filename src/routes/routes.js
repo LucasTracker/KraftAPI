@@ -57,7 +57,7 @@ router.get('/linhaproduto', linhaProdutoController.getAll)
  *                              nm_produto:
  *                                  type: string
  *          responses:
- *              '200':
+ *              '201':
  *                  description: Retorna o JSON do produto criado!
  *                  content:
  *                      application/json:
