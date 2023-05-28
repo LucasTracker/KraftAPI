@@ -116,7 +116,7 @@ router.delete('/linhaproduto/:id', linhaProdutoController.deleteLinhaProduto)
 
 /**
  * @swagger
- * /linhaproduto/id:
+ * /linhaproduto/{id_produto}:
  *      put:
  *          tags: ['Linhas de Produtos']
  *          summary: Atualiza os dados do produto
@@ -248,14 +248,14 @@ router.post('/instalacao', InstalacaoController.createInstalacao)
 
 /**
  * @swagger
- * /instalacao/id:
+ * /instalacao/{id_instalacao}:
  *      delete:
  *          tags: ['Instalação']
  *          summary: Remove uma instalação
  *          description: Remove uma instalação
  *          parameters:
  *              - in: path
- *                name: id
+ *                name: {id_instalacao}
  *                required: true                 
  *          responses:
  *              '200':
@@ -283,7 +283,7 @@ router.delete('/instalacao/:id', InstalacaoController.deleteInstalacao)
 
 /**
  * @swagger
- * /instalacao/id:
+ * /instalacao/{id_instalacao}:
  *      put:
  *          tags: ['Instalação']
  *          summary: Atualiza uma instalação
@@ -419,7 +419,7 @@ router.post('/estoque', EstoqueController.createEstoque)
 
 /**
  * @swagger
- * /estoque/id:
+ * /estoque/{id_estoque}:
  *      delete:
  *          tags: ['Estoque']
  *          summary: Remove um estoque
@@ -453,7 +453,7 @@ router.delete('/estoque/:id', EstoqueController.deleteEstoque)
 
 /**
  * @swagger
- * /estoque/id:
+ * /estoque/{id_estoque}:
  *      put:
  *          tags: ['Estoque']
  *          summary: Atualiza um estoque
@@ -595,14 +595,14 @@ router.post('/monitoramento', Monitoramento.createMonitoramento)
 
 /**
  * @swagger
- * /monitoramento/id:
+ * /monitoramento/{id_instalacao}:
  *      delete:
  *          tags: ['Monitoramento']
  *          summary: Remove um log de monitoramento
  *          description: Remove um log de monitoramento         
  *          parameters:
  *              - in: path
- *                name: id_monitoramento
+ *                name: id_instalacao
  *                required: true
  *          responses:
  *              '200':
@@ -628,7 +628,7 @@ router.delete('/monitoramento/:id', Monitoramento.deleteMonitoramento)
 
 /**
  * @swagger
- * /monitoramento/id:
+ * /monitoramento/{id_instalacao}:
  *      put:
  *          tags: ['Monitoramento']
  *          summary: Atualiza os logs de monitoramento
