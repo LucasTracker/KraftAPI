@@ -8,6 +8,7 @@ const connection = new Client(
 		password:process.env.PG_PASS,
 		host: process.env.PG_HOST,
 		port: 5432,
+		ssl: true
 	}
 )
 
