@@ -13,6 +13,7 @@ const createLinhaProduto = async(req,res) => {
 
 const deleteLinhaProduto = async(req,res) => {
     const id_produto = req.params.id
+    console.log(id_produto)
     const lines = await linhaProduto.deleteLinhaProduto(id_produto)
 
     if(lines === 1) return res.status(200).json({message: `O id = ${id_produto} foi deletado do banco`})

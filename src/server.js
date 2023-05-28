@@ -14,11 +14,12 @@ const swaggerOptions = {
 			title: 'API de Monitoramento do challenge da Kraft',
 			version: '1.0.0',
 	  },
+	  schemes: ['http','https'],
 	  servers: [{
 			url: 'https://kraftapi.onrender.com/'
 	  },
 	  	{
-			url: 'http://localhost:8085'
+			url: 'http://localhost:8085/'
   		}
 		]
 	},
