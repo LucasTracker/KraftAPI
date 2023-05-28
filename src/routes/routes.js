@@ -135,12 +135,10 @@ router.delete('/linhaproduto/:id', linhaProdutoController.deleteLinhaProduto)
  *                      schema:
  *                          type: object
  *                          properties:
- *                              id_produto:
- *                                  type: integer
  *                              nm_produto:
  *                                  type: string
  *          responses:
- *              '200':
+ *              '201':
  *                  description: Retorna o JSON do produto atualizado!
  *                  content:
  *                      application/json:
