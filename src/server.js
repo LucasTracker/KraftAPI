@@ -14,6 +14,13 @@ const swaggerOptions = {
 			title: 'API de Monitoramento do challenge da Kraft',
 			version: '1.0.0',
 	  },
+	  servers: [{
+			url: 'https://kraftapi.onrender.com/'
+	  },
+	  	{
+			url: 'http://localhost:8085'
+  		}
+		]
 	},
 	apis: ['./src/routes/routes.js'], // Substitua com o padrão de nomenclatura dos seus arquivos de rota
 }
