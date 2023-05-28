@@ -81,7 +81,7 @@ router.post('/linhaproduto', linhaProdutoController.createLinhaProduto)
 
 /**
  * @swagger
- * /linhaproduto/id_produto:
+ * /linhaproduto/{id_produto}:
  *      delete:
  *          tags: ['Linhas de Produtos']
  *          summary: Remove um produto
